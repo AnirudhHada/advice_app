@@ -5,10 +5,6 @@ import axios from "axios";
 function App() {
 	const [advice, setAdvice] = useState("");
 
-	useEffect(() => {
-		fetchAdvice();
-	}, []);
-
 	const fetchAdvice = () => {
 		axios
 			.get("https://api.adviceslip.com/advice")
